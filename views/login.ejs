@@ -1,0 +1,16 @@
+<%- include('templates/head.ejs') %>
+
+<main>
+    <section id="login-section">
+        <h2>Login</h2>
+        <form id="login-form" name="login-form" action="/logeado" method="post">
+            <label for="email">Nome de Usuário:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Entrar</button>
+        </form>
+    </section>
+</main>
+
+<%- include('templates/footer.ejs') %>

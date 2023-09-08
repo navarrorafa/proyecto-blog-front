@@ -1,0 +1,32 @@
+<%- include('templates/head.ejs') %>
+
+<main>
+  <!-- Barra de pesquisa -->
+<%- include('templates/barra.ejs') %>
+  
+  <!-- Lista de notícias -->
+  <section>
+
+      <% noticias.forEach((element) => {
+        
+       %>
+        <article>
+          <div class="imgTodas">
+            <img src="<%= noticias.image%>" alt="">
+            </div>
+          <h3><%= element.title %></h3>
+          <p><%= element.resume %>...</p>
+          <a href="">Leia Mais</a>
+        </article>
+      <% }) %>
+
+  
+
+  </section>
+
+
+
+</main>
+
+<%- include('templates/footer.ejs') %>
+
